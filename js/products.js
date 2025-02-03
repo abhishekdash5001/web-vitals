@@ -67,10 +67,23 @@ function displayProducts(products) {
 
 
 
-loadProducts();
+window.onload=()=>{
+    let fetch =false
+let a = document.querySelector("#all-products").getBoundingClientRect();
+let pos = a.top;
+
+    window.onscroll=()=>{
+        if(!fetch && pos -500 <window.scrollY+window.innerHeight){
+            fetch = true
+            for (let i = 0; i < 10000000; i++) {
+                const temp = Math.sqrt(i) * Math.sqrt(i);
+            }
+            loadProducts();
+        }
+      
+    }
+ 
+}
 
 // Simulate heavy operation. It could be a complex price calculation.
-for (let i = 0; i < 10000000; i++) {
-    const temp = Math.sqrt(i) * Math.sqrt(i);
-}
 
