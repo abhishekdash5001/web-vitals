@@ -1,0 +1,1 @@
+this the time when user first interacts with element in the dom and the time it takes to process the event

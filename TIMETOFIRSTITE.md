@@ -1,0 +1,1 @@
+time to take first bite from the server if this is more CLS will be more 

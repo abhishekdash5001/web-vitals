@@ -1,0 +1,1 @@
+if we have more than 1500 elements it will implact seo 
